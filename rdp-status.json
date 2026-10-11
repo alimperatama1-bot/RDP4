@@ -1,20 +1,20 @@
 {
-  "active": false,
-  "hostname": "rdpfree-1",
+  "active": true,
+  "hostname": "rdpfree-2",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Windows 10 look",
   "rdp_port": 3389,
-  "rdp_user": "xyadmin",
+  "rdp_user": "xyadmin1",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-11T05:41:00Z",
-  "expires_at": "2026-10-11T11:36:00Z",
+  "started_at": "2026-10-11T06:55:31Z",
+  "expires_at": "2026-10-11T12:50:31Z",
   "duration_menit": 355,
-  "run_id": "38115289517",
+  "run_id": "38119383779",
   "run_attempt": "1",
-  "run_number": "1",
-  "run_url": "https://github.com/alimperatama1-bot/RDP4/actions/runs/38115289517",
+  "run_number": "2",
+  "run_url": "https://github.com/alimperatama1-bot/RDP4/actions/runs/38119383779",
   "mode": "bersih+win10",
   "win10": {
     "look": "ok",
@@ -42,60 +42,66 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "grafis": {
-    "vulkan": "llvmpipe (LLVM 23.1.2, 256 bits) (PHYSICAL_DEVICE_TYPE_CPU)",
-    "mode": "software",
-    "opengl": "4.6 (Core Profile) Mesa 26.2.4 (git-9a0169f2a7) | llvmpipe (LLVM 23.1.2, 256 bits) | Mesa",
-    "mesa": "26.2.4",
-    "install": "mesa 26.2.4.0 [Mesa/X.org]",
-    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
-    "dir": "C:\\XyRDP\\grafis",
     "loader": "vulkan-1.dll 1.4.363.0 (LunarG)",
+    "vulkan": "llvmpipe (LLVM 23.1.2, 256 bits) (PHYSICAL_DEVICE_TYPE_CPU)",
+    "dir": "C:\\XyRDP\\grafis",
     "debug": "",
+    "install": "mesa 26.2.4.0 [Mesa/X.org]",
     "adapters": "Microsoft Hyper-V Video",
+    "opengl": "4.6 (Core Profile) Mesa 26.2.4 (git-9a0169f2a7) | llvmpipe (LLVM 23.1.2, 256 bits) | Mesa",
+    "mode": "software",
+    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
+    "mesa": "26.2.4",
     "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll,vulkan-1.dll"
+  },
+  "extras": {
+    "lightshot": "skip",
+    "translucent": "ok",
+    "wallpaper": "ok",
+    "wallpaper_file": "wallpaper.jpg",
+    "vscode": "skip",
+    "notepadpp": "skip",
+    "admin": true
   },
   "akses": {
     "tailscale": {
+      "ip": "100.121.92.87",
       "status": "ok",
+      "magicdns": "rdpfree-2.tail3c8938.ts.net.",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "ip": "",
-      "magicdns": "",
-      "hostname": "",
-      "funnel_addr": ""
+      "hostname": "rdpfree-2"
     },
     "mode": "tailscale"
   },
   "media": {
     "audio_output": "rdp_playback_enabled",
-    "wallpaper": "xyverse_configured_for_user_logon",
     "microphone": "rdp_capture_enabled",
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end."
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
+    "wallpaper": "xyverse_configured_for_user_logon"
   },
   "game_environment": {
-    "os": "Microsoft Windows Server 2022 Datacenter",
-    "windows_server": true,
+    "play_tested": false,
     "runner": "github",
+    "windows_server": true,
     "hypervisor_present": true,
-    "play_tested": false
+    "os": "Microsoft Windows Server 2022 Datacenter"
   },
   "games": {
-    "samp": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    },
     "minecraft_bedrock": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    },
-    "minecraft_java": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
+      "status": "disabled",
+      "note": "Tidak dipilih"
     },
     "roblox": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
+      "status": "disabled",
+      "note": "Tidak dipilih"
+    },
+    "samp": {
+      "status": "disabled",
+      "note": "Tidak dipilih"
+    },
+    "minecraft_java": {
+      "status": "disabled",
+      "note": "Tidak dipilih"
     }
-  },
-  "heartbeat_at": "2026-10-11T06:02:07.5854867Z",
-  "stopped_at": "2026-10-11T06:02:26Z"
+  }
 }
